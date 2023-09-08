@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>To do list</title>
+</head>
+
+<body>
+  <h1>To do</h1>
+  <input placeholder="Ce ai de facut astazi ?"
+    class="js-input"
+    onkeydown="
+      if (event.key === 'Enter')
+        addTask();  
+    "
+  >
+  <button class="js-add-task"
+    onclick="
+      addTask();
+    ">Add task
+  </button>
+
+  <hr>
+
+  <div class="js-tasks"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
