@@ -4,18 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <title>To do list</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>To do</h1>
   <input placeholder="Ce ai de facut astazi ?"
-    class="js-input"
+    class="js-input todo-input"
+    maxlength="20"
     onkeydown="
       if (event.key === 'Enter')
-        addTask();  
+        addTask();
     "
   >
-  <button class="js-add-task"
+  
+  <button class="js-add-task add-task"
     onclick="
       addTask();
     ">Add task
@@ -23,7 +26,7 @@
 
   <hr>
 
-  <div class="js-tasks"></div>
+  <div class="js-tasks tasks-grid"></div>
 
   <script src="script.js"></script>
 </body>
