@@ -8,7 +8,7 @@ h1 {
 }
 .todo-input {
     height: 100px;
-    width: 60%;
+    width: 500px;
     font-size: 40px;
     margin-left: 10px;
     margin-right: 10px;
@@ -26,6 +26,8 @@ hr {
     width: 300px;
     font-size: 50px;
     border-radius: 50px;
+    position: relative;
+    float: right;
 }
 
 .tasks-grid {
@@ -48,6 +50,6 @@ hr {
 }
 
 .checkbox {
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
 }
