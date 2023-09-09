@@ -32,7 +32,7 @@ hr {
 
 .tasks-grid {
     display: grid;
-    grid-template-columns: 120px 650px 200px;
+    grid-template-columns: 200px 600px 200px;
     row-gap: 20px;
 }
 
